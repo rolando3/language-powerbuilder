@@ -132,6 +132,12 @@
     }
 
     {
+      'name': 'entity.embedded.sql'
+      'begin': '(?i:^\\s+(SELECT|EXECUTE))'
+      'end': ';\\s+$'
+    }
+
+    {
       'name': 'constant.boolean.pb'
       'match': '(?i:\\b(true|false)\\b)'
     }
