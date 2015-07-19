@@ -24,6 +24,19 @@
     }
 
     {
+      'name': 'meta.pragma.start'
+      'match': '(?i:^(\\s)*(#)(if|elseif)(\\s)+(not(\\s)+)*(defined)(\\s)+(pbdotnet|pbnative|debug)(\\s)+(then))'
+      #\\b(pbdotnet|pbnative|debug)\\b(then))'
+      #(not)*\\s*(defined)
+      #\bdefined\\b
+    }
+
+    {
+      'name': 'meta.pragma.end'
+      'match': '(?i:^(\\s)*(#)(else|end if))$'
+    }
+
+    {
       'name': 'punctuation.separator.continuation.line.pb'
       'match': '&\\s*$'
     }
