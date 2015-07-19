@@ -14,11 +14,11 @@
 'patterns': [
     {
       'match': '\\/\\/.*$'
-      'name': 'comment.block'
+      'name': 'comment.inline'
     }
 
     {
-      'name': 'comment.inline'
+      'name': 'comment.block'
       'begin': '\/\\*'
       'end': '\\*\\/'
     }
