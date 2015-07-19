@@ -53,7 +53,7 @@
 
     {
       'name': 'keyword.control.pb'
-      'match': '(?i:\\b(if|do while|for|return|goto|type|forward|then|end if|loop|do|else|elseif|end for|next|choose case|end choose|case|continue|exit|to|step)\\b)'
+      'match': '(?i:\\b(if|do while|for|return|goto|type|forward|then|end if|loop|do|else|elseif|end for|next|choose case|end choose|case is|case|continue|exit|to|step)\\b)'
     }
 
     {
