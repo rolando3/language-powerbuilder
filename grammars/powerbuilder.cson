@@ -82,13 +82,18 @@
     }
 
     {
-      'name': 'entity.simpletypes.pb'
+      'name': 'entity.system.simpletypes.pb'
       'match': '(?i:\\b(any|boolean|integer|decimal|double|long|string|datetime|date)\\b)'
     }
 
     {
-      'name': 'entity.standardtypes.pb'
-      'match': '(?i:\\b(powerobject|window|datawindow|datastore|tab|userobject|datawindowchild|throwable|runtimeerror|exception|dwbuffer)\\b)'
+      'name': 'entity.system.classes.pb'
+      'match': '(?i:\\b(powerobject|window|datawindow|datastore|tab|userobject|datawindowchild|throwable|runtimeerror|exception)\\b)'
+    }
+
+    {
+      'name': 'entity.system.enumerations.pb'
+      'match': '(?i:\\b(dwitemstatus|dwbuffer)\\b)'
     }
 
     {
