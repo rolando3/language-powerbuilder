@@ -86,15 +86,32 @@
     {
       'name': 'string.quoted.double.pb'
       'begin': '"'
-      'escape': '~'
+      'beginCaptures':
+        '0':
+          'name': 'punctuation.definition.string.begin.pb'
       'end': '"'
+      'endCaptures':
+        '0':
+          'name': 'punctuation.definition.string.end.pb'
+      'escape': '~'
     }
 
-#    {
-#      'name': 'string.quoted.single.pb'
-#      'begin': '\''
-#      'end': '\''
-#    }
+    {
+      'name': 'string.quoted.single.pb'
+      'begin': '\''
+      'beginCaptures':
+        '0':
+          'name': 'punctuation.definition.string.begin.pb'
+      'end': '\''
+      'endCaptures':
+        '0':
+          'name': 'punctuation.definition.string.end.pb'
+      'patterns': [
+        {
+          'include': '#string_escaped_char'
+        }
+      ]
+    }
 
     {
       'name': 'constant.boolean.pb'
