@@ -14,95 +14,95 @@
 'patterns': [
     {
       'match': '\\/\\/.*$'
-      'name': 'comment.inline'
+      'name': 'comment.inline.pb'
     }
 
     {
-      'name': 'comment.block'
+      'name': 'comment.block.pb'
       'begin': '\/\\*'
       'end': '\\*\\/'
     }
 
     {
-      'name': 'keyword.line_continuation'
+      'name': 'punctuation.separator.continuation.line.pb'
       'match': '&\\s*$'
     }
 
     {
-      'name': 'storage.misc'
+      'name': 'storage.misc.pb'
       'match': '\\b(^forward$|^global type|from|end type|type variables|end variables|forward prototypes|end prototypes)\\b'
     }
 
     {
-      'name': 'keyword.boolean'
+      'name': 'keyword.operator.boolean.pb'
       'match': '(?i:\\b(not|or|and)\\b)'
     }
 
     {
-      'name': 'keyword.control'
+      'name': 'keyword.control.pb'
       'match': '(?i:\\b(if|do while|for|return|goto|type|forward|then|end if|loop|do|else|elseif|end for|next|choose case|end choose|case |continue|exit|to|step)\\b)'
     }
 
     {
-      'name': 'constant.enumerations'
+      'name': 'constant.enumerations.pb'
       'match': '(?i:[a-z]+!)'
     }
 
     {
-      'name': 'constant.numeric'
+      'name': 'constant.numeric.pb'
       'match': '\\b\\-*[0-9]+\\b'
     }
 
     {
-      'name': 'storage.methods';
+      'name': 'storage.methods.pb';
       'match': '(?i:\\b(event|function|subroutine|end event|end function|end subroutine)\\b)'
     }
 
     {
-      'name': 'keyword.methodmodifier'
+      'name': 'keyword.methodmodifier.pb'
       'match': '(?i:\\b\.(dynamic|event|post|trigger)\\b)'
     }
 
     {
-      'name': 'storage.access'
+      'name': 'storage.access.pb'
       'match': '(?i:\\b(global|shared|constant|public|private|protected|privatewrite|protectedwrite|ref|readonly)\\b)'
     }
 
     {
-      'name': 'entity.simpletypes'
+      'name': 'entity.simpletypes.pb'
       'match': '(?i:\\b(any|boolean|integer|decimal|double|long|string|datetime|date)\\b)'
     }
 
     {
-      'name': 'entity.standardtypes'
+      'name': 'entity.standardtypes.pb'
       'match': '(?i:\\b(powerobject|window|datawindow|datastore|tab|userobject|datawindowchild|throwable|runtimeerror|exception|dwbuffer)\\b)'
     }
 
     {
-      'name': 'keyword.misc'
+      'name': 'keyword.misc.pb'
       'match': '(?i:\\b(prototypes|this)\\b)'
     }
 
     {
-      'name': 'string.quoted.double.untitled'
+      'name': 'string.quoted.double.pb'
       'begin': '"'
       'escape': '~'
       'end': '"'
     }
 
 #    {
-#      'name': 'string.quoted.single.untitled'
+#      'name': 'string.quoted.single.pb'
 #      'begin': '\''
 #      'end': '\''
 #    }
 
     {
-      'name': 'constant.boolean'
+      'name': 'constant.boolean.pb'
       'match': '(?i:\\b(true|false)\\b)'
     }
 
     {
-      'name': 'keyword.gotolabel'
+      'name': 'keyword.gotolabel.pb'
       'match': '(?i:^.*\:$)'
     }
 
